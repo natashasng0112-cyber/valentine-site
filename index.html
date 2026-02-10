@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valentine?</title>
+  <title>Valentine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body {
@@ -12,50 +11,53 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      background: #0b0b0c;
       font-family: Arial, sans-serif;
-      color: #fff;
+      color: white;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.08);
       padding: 24px;
       border-radius: 20px;
-      max-width: 360px;
       text-align: center;
+      max-width: 340px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
 
     img {
-      width: 180px;
+      width: 160px;
       margin-bottom: 16px;
     }
 
-    h2 {
-      margin: 0 0 10px;
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 15px;
-      line-height: 1.6;
+      line-height: 1.5;
       opacity: 0.9;
+      margin-bottom: 20px;
     }
 
     .buttons {
-      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
     }
 
     button {
-      border: none;
-      padding: 10px 18px;
-      margin: 6px;
+      padding: 10px 20px;
       border-radius: 20px;
+      border: none;
       font-size: 14px;
       cursor: pointer;
     }
 
     .yes {
-      background: #ff6b81;
+      background: #ff5d8f;
       color: white;
     }
 
@@ -68,9 +70,11 @@
 
 <body>
   <div class="card">
-    <img src="https://i.imgur.com/6RLlxYf.png" alt="cute couple">
 
-    <h2>Dakshit</h2>
+    <!-- STICKER -->
+    <img src="sticker.png" alt="cute sticker">
+
+    <h1>Dakshit</h1>
 
     <p>
       You already asked me to be your Valentine.<br>
@@ -78,9 +82,10 @@
     </p>
 
     <div class="buttons">
-      <button class="yes" onclick="alert('So this is us 💗')">Yes</button>
-      <button class="no" onclick="alert('Okay… but I had to ask 🙂')">No</button>
+      <button class="yes" onclick="alert('Hehe 💗')">Yes</button>
+      <button class="no" onclick="alert('Still cute though 😌')">No</button>
     </div>
+
   </div>
 </body>
 </html>
